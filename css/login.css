@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgb(87, 19, 107);
+}
+#total{
+    text-align: center;
+    margin-top: 100px;
+    
+}
+#head{
+    font-size: 30px;
+    padding: 20px 20px;
+    color: white;
+}
+.detail{
+    font-size: 20px;
+    padding: 20px 20px;
+    color: rgb(167, 165, 165);
+}
+#icon{
+    padding: 20px 20px;
+}
+#icon i{
+    margin: 10px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.or{
+    padding: 20px 20px;
+    font-size: 25px;
+    color: white;
+}
+#login{
+    padding: 20px 20px;
+}
+input{
+    width: 400px;
+    padding: 8px 0px;
+}
+#log{
+    margin: 10px;
+    border: 0px;
+    border-bottom: 2px solid red;
+    font-weight: bold;
+    background-color: transparent;
+}
+#password{
+    border: 0px;
+    border-bottom: 2px solid red;
+    font-weight: bold;
+    background-color: transparent;
+}
+#btn{
+    width: 400px;
+    padding: 10px 0px;
+    margin: 20px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid red;
+    background-color: transparent;
+}

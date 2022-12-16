@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch & Chill</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://kit.fontawesome.com/297dd171bc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <div id="navbar">
+        
+            <div>
+                <a href="/index.html">
+                <img src="/img/download.webp" alt="">
+            </a>
+            </div>
+            <div>
+                <a href="/index.html">Home</a>
+            </div>
+            <div>
+                <a href="/tvshow.html">TV Shows</a>
+            </div>
+            <div>
+                <a href="/movie.html">Movies</a>
+            </div>
+            <div style="display: flex;">
+            <input type="text" name="" id="search" placeholder="Search for Movies,Shows etc.">
+            <a href="/search.html"><button id="searchbtn">Search</button></a>
+            </div>
+            <div>
+                <a href="/login.html"><button id="btn" style="padding: 10px; background-color: transparent; color: yellow; cursor: pointer;">LOGIN</button></a></li>
+            </div>
+            <div>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">
+                    <img src="/img/hamburger.png" alt=""></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                      </div>
+                </div>
+            </div>
+    </div>
+    <p>________________________________________________________________________________________________________________________________________________________________________</p>
+    <!-- Banner -->
+    <div id="banner">
+        <div class="slide fade">
+            <img src="https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5264517/cover/1920x770618f9da3dbd54edcac6cd320187bf1f2e6966885630a401fb3ed9fc393b63bbd.jpg" style="width: 100%;">
+            <div class="name">Har Har Mahdeva (Hindi)</div>
+            <button class="btn">Watch</button>
+        </div>
+        <div class="slide fade">
+            <img src="https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5259649/cover/1920x770c85c702415cb46fdbc2b704334a1222d.jpg" style="width: 100%;">
+            <div class="name">Blur</div>
+            <button class="btn">Watch</button>
+        </div>
+        <div class="slide fade">
+            <img src="https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5258273/cover/1920x770d326c22ba9844a87a9c74d0d76616bc1.jpg" style="width: 100%;">
+            <div class="name">King of Serpant</div>
+            <button class="btn">Watch</button>
+        </div>
+        <div class="slide fade">
+            <img src="https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-6-4z5199975/cover/1920x77079afb06df35c44f085cd8482df287a17.jpg" style="width: 100%;">
+            <div class="name">Mukhbir: The story of spy</div>
+            <button class="btn">Watch</button>
+        </div>
+        <div class="slide fade">
+            <img src="https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-6-3392/cover/1920x770a15c26ed517c493798aa0019ed684045.jpg" style="width: 100%;">
+            <div class="name">Bhagya Laxmi</div>
+            <button class="btn">Watch</button>
+        </div>
+        <div class="slide fade">
+            <img src="https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5254708/cover/1920x77088754fa6d1384d259444f7d1d4b00a33.jpg" style="width: 100%;">
+            <div class="name">Chup: Revenge of the artist</div>
+            <button class="btn">Watch</button>
+        </div>
+        <div class="slide fade">
+            <img src="https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5250012/cover/1920x770541441bea82b4c5ebb5e50fdf65b1486.jpg" style="width: 100%;">
+            <div class="name">India Lockdown</div>
+            <button class="btn">Watch</button>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+      </div>
+      <!--Body-->
+      <div id="container">
+        <h2>Trending Near You</h2>
+        <div id="trend">
+            <div class="card">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5250012/portrait/1920x770541441bea82b4c5ebb5e50fdf65b1486.jpg" class="image" alt="">
+                <div class="overlay">
+                    <p>India Lockdown</p>
+                    <button class="carbtn">Watch</button>
+                    <i class="fa-solid fa-share-nodes">Share</i>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-6-4z5199975/portrait/1920x7700b1f9a5596a848a493f7bd6a3d226928.jpg" class="image" alt="">
+                <div class="overlay">
+                    <p>Mukhbir: The Story of spy</p>
+                    <button class="carbtn">Watch</button>
+                    <i class="fa-solid fa-share-nodes">Share</i>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5254708/portrait/1920x77088754fa6d1384d259444f7d1d4b00a33.jpg" class="image" alt="">
+                <div class="overlay">
+                    <p>Chup</p>
+                    <button class="carbtn">Watch</button>
+                    <i class="fa-solid fa-share-nodes">Share</i>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5228525/portrait/1920x77069dfde7f955d4ef69e73c3b682aa636b.jpg" class="image" alt="">
+                <div class="overlay">
+                    <p>Raksha Bandhan</p>
+                    <button class="carbtn">Watch</button>
+                    <i class="fa-solid fa-share-nodes">Share</i>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5250530/portrait/1920x770129e19e854434fa98ff8734cfc2d6d32670f87db468e4c03bd9511d3b0347094.jpg" class="image" alt="">
+                <div class="overlay">
+                    <p>Bhimbisara</p>
+                    <button class="carbtn">Watch</button>
+                    <i class="fa-solid fa-share-nodes">Share</i>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5227565/portrait/1920x7704ce388d5a6e74dac8ad9255657da588f.jpg" class="image" alt="">
+                <div class="overlay">
+                    <p>Kartikeya 2</p>
+                    <button class="carbtn">Watch</button>
+                    <i class="fa-solid fa-share-nodes">Share</i>
+                </div>  
+            </div>
+        </div>
+        <h2>Top 10 Movies in India</h2>
+        <div id="top">
+            <div class="card">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5262283/portrait/1920x7709a2c3520660648989b17c5188c894be2d45e9eee801544d5801688378a5aa4aa.jpg" class="image" alt="">
+                <div class="overlay">
+                    <p>Macherela</p>
+                    <button class="carbtn">Watch</button>
+                    <i class="fa-solid fa-share-nodes">Share</i>
+                </div>  
+            </div>
+            <!--  -->
+            <div class="card">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5259649/portrait/1920x770c85c702415cb46fdbc2b704334a1222d.jpg" class="image" alt="">
+                <div class="overlay">
+                    <p>Blur</p>
+                    <button class="carbtn">Watch</button>
+                    <i class="fa-solid fa-share-nodes">Share</i>
+                </div>  
+            </div>
+            <div class="card">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5250012/portrait/1920x770541441bea82b4c5ebb5e50fdf65b1486.jpg" class="image" alt="">
+                <div class="overlay">
+                    <p>India Lockdown</p>
+                    <button class="carbtn">Watch</button>
+                    <i class="fa-solid fa-share-nodes">Share</i>
+                </div>  
+            </div>
+            <div class="card">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5246147/portrait/1920x770436ead89a3c94046a72fa9f78dc4ba53.jpg" class="image" alt="">
+                <div class="overlay">
+                    <p>Tadka</p>
+                    <button class="carbtn">Watch</button>
+                    <i class="fa-solid fa-share-nodes">Share</i>
+                </div>  
+            </div>
+            <div class="card">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5254708/portrait/1920x77088754fa6d1384d259444f7d1d4b00a33.jpg" class="image" alt="">
+                <div class="overlay">
+                    <p>Chup</p>
+                    <button class="carbtn">Watch</button>
+                    <i class="fa-solid fa-share-nodes">Share</i>
+                </div>  
+            </div>
+            <div class="card">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5264082/portrait/1920x77013997b45a7b54db3852c885ad51bf387.jpg" class="image" alt="">
+                <div class="overlay">
+                    <p>Har Har Mahadeva</p>
+                    <button class="carbtn">Watch</button>
+                    <i class="fa-solid fa-share-nodes">Share</i>
+                </div>  
+            </div>
+        </div>
+        <h2>Latest Hindi Episodes Free</h2>
+        <div id="latest">
+            <div class="cardl">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_798,h_449,c_scale,f_webp,q_auto:eco/resources/0-1-6z5267209/list/0000019600284013bf35427980f663704426fb7e.jpg" class="image" alt="">
+                <div class="overlay">
+                    <p>Arjun Become The owner...</p>
+                    <button class="carbtn">Watch</button>
+                    <i class="fa-solid fa-share-nodes">Share</i>
+                </div> 
+                <div class="show">
+                    <p>Arjun Become The owner</p>
+                    <p>E1397 . 15 Dec</p>
+                </div>
+            </div>
+            <div class="cardl">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_223,h_125,c_scale,f_webp,q_auto:eco/resources/0-1-6z5267038/list/000001460ae3e7f7d6f447cfbf25cd633a6cb48a.jpg" class="image" alt="">
+                <div class="overlay">
+                    <p>Neelam Gives Rishi an...</p>
+                    <button class="carbtn">Watch</button>
+                    <i class="fa-solid fa-share-nodes">Share</i>
+                </div> 
+                <div class="show">
+                    <p>Neelam Gives Rishi an...</p>
+                    <p>E428 . 15 Dec</p>
+                </div>
+            </div>
+            <div class="cardl">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_223,h_125,c_scale,f_webp,q_auto:eco/resources/0-1-6z5267047/list/00000062b828c705ce2345aeb7d98ea1f9d7847f.jpg" class="image" alt="">
+                <div class="overlay">
+                    <p>Prachi Finds a Ransome Note</p>
+                    <button class="carbtn">Watch</button>
+                    <i class="fa-solid fa-share-nodes">Share</i>
+                </div> 
+                <div class="show">
+                    <p>Prachi Finds a Ransome Note</p>
+                    <p>E2285 . 15 Dec</p>
+                </div>
+            </div>
+            <div class="cardl">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_223,h_125,c_scale,f_webp,q_auto:eco/resources/0-1-6z5267182/list/00000154f73c9758260a439da0092413b051ffb6.jpg" class="image" alt="">
+                <div class="overlay">
+                    <p>Mohini Executes Her Poly</p>
+                    <button class="carbtn">Watch</button>
+                    <i class="fa-solid fa-share-nodes">Share</i>
+                </div> 
+                <div class="show">
+                    <p>Mohini Executes Her Poly</p>
+                    <p>E78 . 15 Dec</p>
+                </div>
+            </div>
+            <div class="cardl">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_223,h_125,c_scale,f_webp,q_auto:eco/resources/0-1-6z5267089/list/000001542e841b56895c4b1ab26a65b47f8c7f12.jpg" class="image" alt="">
+                <div class="overlay">
+                    <p>Damini Shoots Radha</p>
+                    <button class="carbtn">Watch</button>
+                    <i class="fa-solid fa-share-nodes">Share</i>
+                </div>
+                <div class="show">
+                    <p>Damini Shoots Radha</p>
+                    <p>E205 . 15 Dec</p>
+                </div> 
+            </div>
+            </div>
+            <h2>Watch Free | ZEE5 Manoranjan Festival</h2>
+            <div id="fes">
+                <div class="card">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5168144/portrait/1920x770231e4cce81b8432db798e3051c668bf6c247548b7a24419c9605c50abb4c536b.jpg" class="image" alt="">
+                    <div class="overlay">
+                        <p>Dhaakad</p>
+                        <button class="carbtn">Watch</button>
+                        <i class="fa-solid fa-share-nodes">Share</i>
+                    </div>  
+                </div>
+                <div class="card">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-35166/portrait/1920x770a6695f542cf3419291a6bc299aa894f36beecab5698747888534bbbac6185936.jpg" class="image" alt="">
+                    <div class="overlay">
+                        <p>Simmba</p>
+                        <button class="carbtn">Watch</button>
+                        <i class="fa-solid fa-share-nodes">Share</i>
+                    </div>  
+                </div>
+                <div class="card">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-96839/portrait/1920x77062fa79ad2a00435ca0ef053f6a476a74.jpg" class="image" alt="">
+                    <div class="overlay">
+                        <p>Dream Girl</p>
+                        <button class="carbtn">Watch</button>
+                        <i class="fa-solid fa-share-nodes">Share</i>
+                    </div>  
+                </div>
+                <div class="card">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-27132/portrait/1920x770d1edc80582d845ffadbb89aa802c967b5ee1a2f6dd514d9bb193c3c269165cc3.jpg" class="image" alt="">
+                    <div class="overlay">
+                        <p>Kedarnath</p>
+                        <button class="carbtn">Watch</button>
+                        <i class="fa-solid fa-share-nodes">Share</i>
+                    </div>  
+                </div>
+                <div class="card">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z51248/portrait/1920x77014c02c5fa1a34847ae30a271fb74d329.jpg" class="image" alt="">
+                    <div class="overlay">
+                        <p>Dial 100</p>
+                        <button class="carbtn">Watch</button>
+                        <i class="fa-solid fa-share-nodes">Share</i>
+                    </div>  
+                </div>
+                <div class="card">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-6-4z5246228/portrait/1920x7702c9b1a467ac54bb88d1d10ea40cde7c6fe2aceea54f149968b56565141ff844f.jpg" class="image" alt="">
+                    <div class="overlay">
+                        <p>Country Mafia</p>
+                        <button class="carbtn">Watch</button>
+                        <i class="fa-solid fa-share-nodes">Share</i>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <h2>Popular Movies</h2>
+        <div id="pop">
+                <div class="card">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5246147/portrait/1920x770436ead89a3c94046a72fa9f78dc4ba53.jpg" class="image" alt="">
+                    <div class="overlay">
+                        <p>Tadka</p>
+                        <button class="carbtn">Watch</button>
+                        <i class="fa-solid fa-share-nodes">Share</i>
+                    </div>  
+                </div>
+                <div class="card">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-101-10z5145273/portrait/1920x770575c84286cdf4b8697c5c6007d0b7e9d26d6a675c3d2437d8e85cead413d13b2.jpg" class="image" alt="">
+                    <div class="overlay">
+                        <p>RRR</p>
+                        <button class="carbtn">Watch</button>
+                        <i class="fa-solid fa-share-nodes">Share</i>
+                    </div>  
+                </div>
+                <div class="card">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5266343/portrait/1920x770adfe1ea302d644f69d29804dae8b13b1.jpg" class="image" alt="">
+                    <div class="overlay">
+                        <p>Hansan</p>
+                        <button class="carbtn">Watch</button>
+                        <i class="fa-solid fa-share-nodes">Share</i>
+                    </div>  
+                </div>
+                <div class="card">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5214599/portrait/1920x770be7ef3576c2b46ac8bf91788e1076c5f.jpg" class="image" alt="">
+                    <div class="overlay">
+                        <p>Jurassic World</p>
+                        <button class="carbtn">Watch</button>
+                        <i class="fa-solid fa-share-nodes">Share</i>
+                    </div>  
+                </div>
+                <div class="card">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5250012/portrait/1920x770541441bea82b4c5ebb5e50fdf65b1486.jpg" class="image" alt="">
+                    <div class="overlay">
+                        <p>India Lockdown</p>
+                        <button class="carbtn">Watch</button>
+                        <i class="fa-solid fa-share-nodes">Share</i>
+                    </div>  
+                </div>
+                <div class="card">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5259649/portrait/1920x770c85c702415cb46fdbc2b704334a1222d.jpg" class="image" alt="">
+                    <div class="overlay">
+                        <p>Blur</p>
+                        <button class="carbtn">Watch</button>
+                        <i class="fa-solid fa-share-nodes">Share</i>
+                    </div>  
+                </div>
+        </div>
+      </div>
+      <p>________________________________________________________________________________________________________________________________________________________________________</p>
+      <!-- Footer -->
+      <div id="bottom">
+        <div id="footer">
+        <div id="download">
+            <h3>Download Apps</h3>
+            
+                <a href="https://play.google.com/store/apps/details?id=com.graymatrix.did&pli=1" target="_blank">
+                    <img src="https://www.zee5.com/images/play_store.png?ver=2.52.65" alt="">
+                </a>
+            
+                <a href="https://apps.apple.com/in/app/zee5-shows-live-tv-movies/id743691886" target="_blank">
+                    <img src="https://www.zee5.com/images/app_store.png?ver=2.52.65" alt="">
+                </a>
+            
+        </div>
+        <div class="scoial">
+            <h3>Connect with us</h3>
+            <a href="https://www.facebook.com/ZEE5/" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/zee5/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/zee5india" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCXOgAl4w-FQero1ERbGHpXQ" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+        </div>
+      
+        <div class="info">
+            <p>About Us</p>
+            <p>Help Center</p>
+            <p>Privacy Policy</p>
+            <p>Term of Use</p>
+        </div>
+        <div id="link">
+            <div id="col-1">
+                <h4>Popular TV Shows</h4>
+                <p>Kumkum Bhagya</p>
+                <p>Kundali Bhagya</p>
+                <p>Bhagya Lakshmi</p>
+                <p>Tujhse Hai Raabta</p>
+            </div>
+            <div id="col-2">
+                <h4>Premiun Movies</h4>
+                <p>Helmet</p>
+                <p>200 Halla Ho</p>
+                <p>14 Phere ho</p>
+                <p>Dial 100</p>
+            </div>
+            <div id="col-3">
+                <h4>Popular Webseries</h4>
+                <p>Sunflower</p>
+                <p>Jeet Ki Zid</p>
+                <p>Bicchoo Ka Khel</p>
+                <p>Tripling</p>
+            </div>
+            <div id="col-4">
+                <h4>Popular LIVE TV Channel</h4>
+                <p>Aaj Tak</p>
+                <p>Zee News</p>
+                <p>Zee TV HD</p>
+                <p>&TV HD</p>
+            </div>
+        </div>
+    </div>    
+</body>
+<script src="/js/home.js"></script>
+</html>
