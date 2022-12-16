@@ -1,0 +1,385 @@
+
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: #2a0952;
+        }
+        #navbar{
+            display: flex;
+            margin-top: 20px;
+            justify-content:space-between;
+            width: 100%;
+            margin: auto;
+            height: 50px;
+            justify-items: center;
+            height: 100px;
+            background-color: #2a0952;
+        }
+        #navbar>div{
+            padding: 10px 10px;
+            width: 25%;
+            margin: auto;
+            text-align: center;
+        }
+        #navbar>div>a{
+            font-size: 20px;
+            text-decoration: none;
+            color: rgb(158, 153, 153);
+        }
+        #navbar>div>a:hover{
+            color: #ffffff;
+        }
+        #navbar>div>a>img{
+            
+            width: 50%;
+        }
+        #navbar input{
+            float: right;
+            padding: 6px;
+            border: none;
+            margin-top: 8px;
+            margin-right: 16px;
+            
+        }
+        #btn:hover{
+          background-color: yellow;
+          color: black;
+        }
+        #search{
+          padding: 10px 10px;
+          border-radius: 50px;
+        }
+        #searchbtn{
+          padding: -5px -5px;
+          border-radius: 50px;
+          cursor: pointer;
+        }
+/* Hamburger */
+.dropbtn {
+  background-color: #2a0952;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2a0952;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+
+/* Banner slide */
+*{box-sizing: border-box;}
+
+#banner{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    /* margin: 10px; */
+}
+.slide{
+    display: none;
+    text-align: left;
+}
+.prev,.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+#banner .btn {
+  position: absolute;
+  top: 90%;
+  left: 5%;
+  border: 1px solid black;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#banner .btn:hover {
+  background-color: black;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0, 0, 0, 0.836);
+}
+.name{
+    color: beige;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    width: 100%;
+}
+.dot{
+    cursor: pointer;
+    height: 5px;
+    width: 5px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#bottom{
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+#footer{
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+}
+#download{
+  display: flex;
+  height: 100px;
+ width: 30%;
+}
+#download img{
+  width: 100%;
+  /* margin: 10px; */
+}
+.scoial{
+  display: flex;
+  height: 100px;
+  width: 30%;
+  flex: end;
+  text-align: center;
+}
+.scoial i{
+  font-size: 22px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.info{
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+}
+.info p{
+  margin: 10px;
+  cursor: pointer;
+  color: #717171;
+}
+.info p:hover{
+  color: white;
+}
+
+#link{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+#container{
+  width: 100%;
+  margin: auto;
+}
+#container>h2{
+  color: white;
+}
+#trend{
+  display: flex;
+  
+}
+#top{
+  display: flex;
+  
+}
+#latest{
+  display: flex;
+}
+#fes{
+  display: flex;
+}
+#pop{
+  display: flex;
+}
+#befor{
+    display: flex;
+}
+
+
+.card {
+  position: relative;
+  width: 15%;
+  margin: 10px 10px;
+}
+.cardl{
+  position: relative;
+  width: 20%;
+  margin: 10px 10px;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f8f9fa;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  
+  transition: .5s ease;
+}
+.card:hover{
+  border: 4px solid white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card:hover .overlay {
+  height: 30%;
+  
+}
+.cardl:hover{
+  border: 4px solid white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.cardl:hover .overlay {
+  height: 40%;
+  
+}
+
+.overlay>p {
+  color: rgb(5, 5, 5);
+  font-size: 15px;
+  position: absolute;
+  left: 40%;
+  width: 70%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+.overlay> .carbtn{
+  position: absolute;
+  left: 1%;
+  top: 52%;
+  padding: 5px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.overlay>i{
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+#table{
+    width: 100%;
+    margin: auto;
+}
+#table table{
+    width: 90%;
+    border-collapse: collapse;
+}
+#table td, #table th{
+    border: 1px solid rgb(7, 7, 7);
+  padding: 8px;
+}
+#table tr:nth-child(even){background-color: transparent;}
+
+#table tr:hover {background-color: #ddd;}
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: transparent;
+  color: white;
+}
+#link h4{
+  color: white;
+}
+#col-1>p:hover{
+  color: #5c0a6d;
+  cursor: pointer;
+}
+#col-2>p:hover{
+  color: #5c0a6d;
+  cursor: pointer;
+}
+#col-3>p:hover{
+  color: #5c0a6d;
+  cursor: pointer;
+}
+#col-4>p:hover{
+  color: #5c0a6d;
+  cursor: pointer;
+}
