@@ -1,0 +1,178 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #2a0952;
+}
+nav{
+  display: flex;
+  width: 100%;
+  background: #2a0952;
+  position: relative;
+  justify-content: space-between;
+  text-align: center;
+  padding: 15px 30px;
+}
+nav .logo{
+  cursor: pointer;
+  width: 5%;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  margin: auto 0;
+  
+}
+nav ul li a{
+  margin: 0px 20px;
+  font-size: 25px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  color: #bbb;
+}
+nav ul li a:hover{
+  color: #f1f1f1;
+}
+nav .search_box{
+  display: flex;
+  margin: auto 0; 
+  height: 35px;
+  line-height: 35px;  
+ }
+ nav .search_box input{
+  border-radius: 5px;
+  outline: none;
+  background-color: transparent;
+  height: 100%;
+  padding: 0px 10px;
+  font-size: 20px;
+  width: 350px;
+ }
+ nav .search_box span{
+  font-size: 20px;
+  background-color: white;
+  height: 100%;
+  padding: 8px;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 5px;
+ }
+ nav .search_box span::after{
+  height: 100%;
+  width: 0%;
+  content: '';
+  background: #2a0952;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  transition: 0.3s;
+ }
+ nav .search_box span:hover::after{
+  width: 100%;
+ }
+ nav img{
+  width: 100%;
+ }
+ nav .login{
+  display: flex;
+  margin: auto 0; 
+  height: 35px;
+  line-height: 35px;
+ }
+ nav .login button{
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+ }
+ nav .dropdown{
+  position: relative;
+  display: flex;
+  margin: auto 0; 
+  height: 35px;
+  line-height: 35px; 
+ }
+ .menu{
+  position: absolute;
+  right: 0;
+  top: calc(100% + .25rem);
+  background-color: white;
+  padding: .75rem;
+  border-radius: .25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out;
+ }
+ .dropdown > .link:focus + .menu{
+  opacity: 1;
+  transform: translateY(0);
+ }
+
+/* Hamburger */
+/* Dropdown Button */
+.dropbtn {
+  background-color: rgba(0, 0, 0, .1);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+/* Banner slide */
+*{box-sizing: border-box;}
+
+#container{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  /* justify-content: space-between; */
+}
+.photo{
+  width: 30%;
+}
+.desc{
+  width: 50%;
+  border: 2px solid black;
+  padding: 5px;
+}
+.fa-solid{
+  color: gold;
+}

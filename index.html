@@ -10,78 +10,67 @@
 </head>
 <body>
     <!-- navbar -->
-    <div id="navbar">
-        
-            <div>
-                <a href="/index.html">
-                <img src="/img/download.webp" alt="">
-            </a>
+    <nav>
+        <div class="logo"><a href="/index.html"><img src="/img/download.webp" alt=""></a></div>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/tvshow.html">TV Shows</a></li>
+          <li><a href="/movie.html">Movies</a></li>
+        </ul>
+        <div class="search_box">
+          <input type="search" placeholder="Search here" id="search">
+          <span class="fa fa-search" id="searchbtn"></span>
+        </div>
+        <div class="login">
+          <a href="/login.html"><button><b>LOGIN</b></button></a>
+        </div>
+        <!-- <i class="fa-solid fa-bars"></i> -->
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">About Us</a>
+              <a href="#">Help Center</a>
+              <a href="#">Privacy</a>
             </div>
-            <div>
-                <a href="/index.html">Home</a>
-            </div>
-            <div>
-                <a href="/tvshow.html">TV Shows</a>
-            </div>
-            <div>
-                <a href="/movie.html">Movies</a>
-            </div>
-            <div style="display: flex;">
-            <input type="text" name="" id="search" placeholder="Search for Movies,Shows etc.">
-            <a href="/search.html"><button id="searchbtn">Search</button></a>
-            </div>
-            <div>
-                <a href="/login.html"><button id="btn" style="padding: 10px; background-color: transparent; color: yellow; cursor: pointer;">LOGIN</button></a></li>
-            </div>
-            <div>
-                <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">
-                    <img src="/img/hamburger.png" alt=""></button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                      </div>
-                </div>
-            </div>
-    </div>
+          </div>
+      </nav>
     <p>________________________________________________________________________________________________________________________________________________________________________</p>
     <!-- Banner -->
     <div id="banner">
         <div class="slide fade">
             <img src="https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5264517/cover/1920x770618f9da3dbd54edcac6cd320187bf1f2e6966885630a401fb3ed9fc393b63bbd.jpg" style="width: 100%;">
-            <div class="name">Har Har Mahdeva (Hindi)</div>
-            <button class="btn">Watch</button>
+            <div class="name"><h3>Har Har Mahdeva (Hindi)</h3></div>
+            <button class="btn"><i class="fa-sharp fa-solid fa-play"></i> Watch</button>
         </div>
         <div class="slide fade">
             <img src="https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5259649/cover/1920x770c85c702415cb46fdbc2b704334a1222d.jpg" style="width: 100%;">
-            <div class="name">Blur</div>
-            <button class="btn">Watch</button>
+            <div class="name"><h3>Blurr</h3></div>
+            <button class="btn"><i class="fa-sharp fa-solid fa-play"></i> Watch</button>
         </div>
         <div class="slide fade">
             <img src="https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5258273/cover/1920x770d326c22ba9844a87a9c74d0d76616bc1.jpg" style="width: 100%;">
-            <div class="name">King of Serpant</div>
-            <button class="btn">Watch</button>
+            <div class="name"><h3>King of Serpant</h3></div>
+            <button class="btn"><i class="fa-sharp fa-solid fa-play"></i> Watch</button>
         </div>
         <div class="slide fade">
             <img src="https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-6-4z5199975/cover/1920x77079afb06df35c44f085cd8482df287a17.jpg" style="width: 100%;">
-            <div class="name">Mukhbir: The story of spy</div>
-            <button class="btn">Watch</button>
+            <div class="name"><h3>Mukhbir: The story of spy</h3></div>
+            <button class="btn"><i class="fa-sharp fa-solid fa-play"></i> Watch</button>
         </div>
         <div class="slide fade">
             <img src="https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-6-3392/cover/1920x770a15c26ed517c493798aa0019ed684045.jpg" style="width: 100%;">
-            <div class="name">Bhagya Laxmi</div>
-            <button class="btn">Watch</button>
+            <div class="name"><h3>Bhagya Laxmi</h3></div>
+            <button class="btn"><i class="fa-sharp fa-solid fa-play"></i> Watch</button>
         </div>
         <div class="slide fade">
             <img src="https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5254708/cover/1920x77088754fa6d1384d259444f7d1d4b00a33.jpg" style="width: 100%;">
-            <div class="name">Chup: Revenge of the artist</div>
-            <button class="btn">Watch</button>
+            <div class="name"><h3>Chup: Revenge of the artist</h3></div>
+            <button class="btn"><i class="fa-sharp fa-solid fa-play"></i> Watch</button>
         </div>
         <div class="slide fade">
             <img src="https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5250012/cover/1920x770541441bea82b4c5ebb5e50fdf65b1486.jpg" style="width: 100%;">
-            <div class="name">India Lockdown</div>
-            <button class="btn">Watch</button>
+            <div class="name"><h3>India Lockdown</h3></div>
+            <button class="btn"><i class="fa-sharp fa-solid fa-play"></i> Watch</button>
         </div>
         <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -104,7 +93,7 @@
             <div class="card">
                 <img src="https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5250012/portrait/1920x770541441bea82b4c5ebb5e50fdf65b1486.jpg" class="image" alt="">
                 <div class="overlay">
-                    <p>India Lockdown</p>
+                    <p><b>India Lockdown</b></p>
                     <button class="carbtn">Watch</button>
                     <i class="fa-solid fa-share-nodes">Share</i>
                 </div>
@@ -112,7 +101,7 @@
             <div class="card">
                 <img src="https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-6-4z5199975/portrait/1920x7700b1f9a5596a848a493f7bd6a3d226928.jpg" class="image" alt="">
                 <div class="overlay">
-                    <p>Mukhbir: The Story of spy</p>
+                    <p><b>Mukhbir: The Story of spy</b></p>
                     <button class="carbtn">Watch</button>
                     <i class="fa-solid fa-share-nodes">Share</i>
                 </div>
@@ -120,7 +109,7 @@
             <div class="card">
                 <img src="https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5254708/portrait/1920x77088754fa6d1384d259444f7d1d4b00a33.jpg" class="image" alt="">
                 <div class="overlay">
-                    <p>Chup</p>
+                    <p><b>Chup</b></p>
                     <button class="carbtn">Watch</button>
                     <i class="fa-solid fa-share-nodes">Share</i>
                 </div>
@@ -128,7 +117,7 @@
             <div class="card">
                 <img src="https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5228525/portrait/1920x77069dfde7f955d4ef69e73c3b682aa636b.jpg" class="image" alt="">
                 <div class="overlay">
-                    <p>Raksha Bandhan</p>
+                    <p><b>Raksha Bandhan</b></p>
                     <button class="carbtn">Watch</button>
                     <i class="fa-solid fa-share-nodes">Share</i>
                 </div>
@@ -136,7 +125,7 @@
             <div class="card">
                 <img src="https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5250530/portrait/1920x770129e19e854434fa98ff8734cfc2d6d32670f87db468e4c03bd9511d3b0347094.jpg" class="image" alt="">
                 <div class="overlay">
-                    <p>Bhimbisara</p>
+                    <p><b>Bhimbisara</b></p>
                     <button class="carbtn">Watch</button>
                     <i class="fa-solid fa-share-nodes">Share</i>
                 </div>
@@ -144,7 +133,7 @@
             <div class="card">
                 <img src="https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5227565/portrait/1920x7704ce388d5a6e74dac8ad9255657da588f.jpg" class="image" alt="">
                 <div class="overlay">
-                    <p>Kartikeya 2</p>
+                    <p><b>Kartikeya 2</b></p>
                     <button class="carbtn">Watch</button>
                     <i class="fa-solid fa-share-nodes">Share</i>
                 </div>  
@@ -381,7 +370,7 @@
                 </a>
             
                 <a href="https://apps.apple.com/in/app/zee5-shows-live-tv-movies/id743691886" target="_blank">
-                    <img src="https://www.zee5.com/images/app_store.png?ver=2.52.65" alt="">
+                    <img src="https://www.zee5.com/images/app_store.png?ver=2.52.65" style="margin-left: 5px;" alt="">
                 </a>
             
         </div>

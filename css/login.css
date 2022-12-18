@@ -63,4 +63,76 @@ input{
     font-weight: bold;
     border: 2px solid red;
     background-color: transparent;
+    cursor: pointer;
 }
+#myBtn b:hover{
+    color: white;
+    cursor: pointer;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color:rgb(87, 19, 107);;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  .modal-content #newcred{
+    margin: 10px;
+    border: 0px;
+    border-bottom: 2px solid red;
+    font-weight: bold;
+    background-color: transparent;
+  }
+  .modal-content #newpass{
+    margin: 10px;
+    border: 0px;
+    border-bottom: 2px solid red;
+    font-weight: bold;
+    background-color: transparent;
+  }
+  .modal-content p{
+    cursor: pointer;
+  }
+  .modal-content p:hover{
+    color: white;
+  }
+  .modal-content a input{
+    width: 400px;
+    padding: 10px 0px;
+    margin: 20px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid red;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
