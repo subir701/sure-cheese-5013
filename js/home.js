@@ -170,33 +170,17 @@ function showSlides() {
   setTimeout(showSlides, 4000); 
 }
 
-// Hamburger
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
+let input=document.getElementById("search");
+let button=document.getElementById("searchbtn");
+button.addEventListener("click",()=>{
+  localStorage.removeItem("search");
+  let data=JSON.parse(localStorage.getItem("search"))||[];
+  movie.forEach((element) => {
+    if(element.name.toLowerCase()==input.value.toLowerCase()){
+    data.push(element);
+    localStorage.setItem("search",JSON.stringify(data));
+    window.location.assign("search.html")
     }
-  }
-}
-
-// let input=document.getElementById("search");
-// let button=document.getElementById("searchbtn");
-// button.addEventListener("click",()=>{
-//   movie.forEach((element) => {
-//     if(element.name==input.value){
-
-//     }
-//   });
-// })
+  });
+})

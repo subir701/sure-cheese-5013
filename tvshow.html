@@ -9,77 +9,66 @@
     <script src="https://kit.fontawesome.com/297dd171bc.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="navbar">
-        
-        <div>
-            <a href="/index.html">
-            <img src="/img/download.webp" alt="">
-        </a>
+    <nav>
+        <div class="logo"><a href="/index.html"><img src="/img/download.webp" alt=""></a></div>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/tvshow.html">TV Shows</a></li>
+          <li><a href="/movie.html">Movies</a></li>
+        </ul>
+        <div class="search_box">
+          <input type="search" placeholder="Search here" id="search">
+          <span class="fa fa-search" id="searchbtn"></span>
         </div>
-        <div>
-            <a href="/index.html">Home</a>
+        <div class="login">
+          <a href="/login.html"><button><b>LOGIN</b></button></a>
         </div>
-        <div>
-            <a href="/tvshow.html">TV Shows</a>
-        </div>
-        <div>
-            <a href="/movie.html">Movies</a>
-        </div>
-        <div style="display: flex;">
-        <input type="text" name="" id="search" placeholder="Search for Movies,Shows etc.">
-        <a href="/search.html"><button id="searchbtn">Search</button></a>
-        </div>
-        <div>
-            <a href="/login.html"><button id="btn" style="padding: 10px; background-color: transparent; color: yellow; cursor: pointer;">LOGIN</button></a></li>
-        </div>
-        <div>
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">
-                <img src="/img/hamburger.png" alt=""></button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                  </div>
+        <!-- <i class="fa-solid fa-bars"></i> -->
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">About Us</a>
+              <a href="#">Help Center</a>
+              <a href="#">Privacy</a>
             </div>
-        </div>
-</div>
+          </div>
+      </nav>
 <p>________________________________________________________________________________________________________________________________________________________________________</p>
 <!-- Banner -->
 <div id="banner">
     <div class="slide fade">
         <img src="https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-6-366/cover/1920x77034e3eda8bcc4448f9d5d0bd3cb3b370d.jpg" style="width: 100%;">
-        <div class="name">Kundali Bhagya</div>
+        <div class="name"><h3>Kundali Bhagya</h3></div>
         <button class="btn"><i class="fa-sharp fa-solid fa-play"></i> Watch</button>
     </div>
     <div class="slide fade">
         <img src="https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-6-127/cover/1920x77016130f4e4ae84c7b8638e5dfdee6f207.jpg" style="width: 100%;">
-        <div class="name">Kumkum Bhagya</div>
+        <div class="name"><h3>Kumkum Bhagya</h3></div>
         <button class="btn"><i class="fa-sharp fa-solid fa-play"></i> Watch</button>
     </div>
     <div class="slide fade">
         <img src="https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-6-4z5214664/cover/1920x770b72bac5a9aa44b91954373eee6383996.jpg" style="width: 100%;">
-        <div class="name">Main Hoon Aparjita</div>
+        <div class="name"><h3>Main Hoon Aparjita</h3></div>
         <button class="btn"><i class="fa-sharp fa-solid fa-play"></i> Watch</button>
     </div>
     <div class="slide fade">
         <img src="https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-6-4z5130241/cover/1920x770dc6d9c3fc4474045bc78e2150330d1cb.jpg" style="width: 100%;">
-        <div class="name">Pyar Ka Phela Naam: Radha Mohan</div>
+        <div class="name"><h3>Pyar Ka Phela Naam: Radha Mohan</h3></div>
         <button class="btn"><i class="fa-sharp fa-solid fa-play"></i> Watch</button>
     </div>
     <div class="slide fade">
         <img src="https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-6-4z5247981/cover/1920x7708fc52d94d26049c7b3406d3bf07de570.jpg" style="width: 100%;">
-        <div class="name">Rab Se Hai Dua</div>
+        <div class="name"><h3>Rab Se Hai Dua</h3></div>
         <button class="btn"><i class="fa-sharp fa-solid fa-play"></i> Watch</button>
     </div>
     <div class="slide fade">
         <img src="https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-6-3392/cover/1920x770a15c26ed517c493798aa0019ed684045.jpg" style="width: 100%;">
-        <div class="name">Bhagya Lakshmi</div>
+        <div class="name"><h3>Bhagya Lakshmi</h3></div>
         <button class="btn"><i class="fa-sharp fa-solid fa-play"></i> Watch</button>
     </div>
     <div class="slide fade">
         <img src="https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-6-3510/cover/1920x7708b56110e9bcd4529b3d75b6d9ffe5acf.jpg" style="width: 100%;">
-        <div class="name">Meet</div>
+        <div class="name"><h3>Meet</h3></div>
         <button class="btn"><i class="fa-sharp fa-solid fa-play"></i> Watch</button>
     </div>
     <!-- Next and previous buttons -->

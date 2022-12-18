@@ -1,160 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-                body{
-            padding: 0;
-            margin: 0;
-            background-color: #2a0952;
-        }
-        #navbar{
-            display: flex;
-            margin-top: 20px;
-            justify-content:space-between;
-            width: 100%;
-            margin: auto;
-            height: 50px;
-            justify-items: center;
-            height: 100px;
-            background-color: #2a0952;
-        }
-        #navbar>div{
-            padding: 10px 10px;
-            width: 25%;
-            margin: auto;
-            text-align: center;
-        }
-        #navbar>div>a{
-            font-size: 20px;
-            text-decoration: none;
-            color: rgb(158, 153, 153);
-        }
-        #navbar>div>a:hover{
-            color: #ffffff;
-        }
-        #navbar>div>a>img{
-            
-            width: 50%;
-        }
-        #navbar input{
-            float: right;
-            padding: 6px;
-            border: none;
-            margin-top: 8px;
-            margin-right: 16px;
-            
-        }
-        #btn:hover{
-          background-color: yellow;
-          color: black;
-        }
-        #search{
-          padding: 10px 10px;
-          border-radius: 50px;
-        }
-        #searchbtn{
-          padding: -5px -5px;
-          border-radius: 50px;
-          cursor: pointer;
-        }
-/* Hamburger */
-.dropbtn {
-  background-color: #2a0952;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2a0952;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search</title>
+  <script src="https://kit.fontawesome.com/297dd171bc.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/search.css">
 </head>
 <body>
-    <div id="navbar">
-        
-        <div>
-            <a href="/index.html">
-            <img src="/img/download.webp" alt="">
-        </a>
+  <nav>
+    <div class="logo"><a href="/index.html"><img src="/img/download.webp" alt=""></a></div>
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/tvshow.html">TV Shows</a></li>
+      <li><a href="/movie.html">Movies</a></li>
+    </ul>
+    <div class="search_box">
+      <input type="search" placeholder="Search here" id="search">
+      <span class="fa fa-search" id="searchbtn"></span>
+    </div>
+    <div class="login">
+      <a href="/login.html"><button><b>LOGIN</b></button></a>
+    </div>
+    <!--  -->
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">About Us</a>
+          <a href="#">Help Center</a>
+          <a href="#">Privacy</a>
         </div>
-        <div>
-            <a href="/index.html">Home</a>
-        </div>
-        <div>
-            <a href="/tvshow.html">TV Shows</a>
-        </div>
-        <div>
-            <a href="/movie.html">Movies</a>
-        </div>
-        <div style="display: flex;">
-        <input type="text" name="" id="search" placeholder="Search for Movies,Shows etc.">
-        <a href="/search.html"><button id="searchbtn">Search</button></a>
-        </div>
-        <div>
-            <a href="/login.html"><button id="btn" style="padding: 10px; background-color: transparent; color: yellow; cursor: pointer;">LOGIN</button></a></li>
-        </div>
-        <div>
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">
-                <img src="/img/hamburger.png" alt=""></button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                  </div>
-            </div>
-        </div>
-</div>
-    <div id="cont"></div>
-    <div id="main"></div>
+      </div>
+  </nav>
+<p>________________________________________________________________________________________________________________________________________________________________________</p>
+<div id="dis"></div>
+<div id="container"></div>
 </body>
-<script>
-    let input=document.getElementById("search");
-let button=document.getElementById("searchbtn");
-button.addEventListener("click",()=>{
-  movie.forEach((element) => {
-    if(element.name==input.value){
-      
-    }
-  });
-})
-</script>
+<script src="/js/search.js"></script>
 </html>
